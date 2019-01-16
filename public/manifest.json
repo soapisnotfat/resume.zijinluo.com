@@ -1,0 +1,15 @@
+{
+  "short_name": "Zijin Luo - Resume",
+  "name": "CV / Resume of Zijin Luo",
+  "icons": [
+    {
+      "src": "image.ico",
+      "sizes": "251x256",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
