@@ -24,6 +24,7 @@ body {
 .cv-page {
   background: white;
   display: block;
+  border-radius: 25px;
   margin: 0.5cm auto 0.5cm;
   box-shadow: 0 1px 0 0 #ffffff inset, 0 1px 2px 0 #cccccc;
   max-width: $paper-width;
@@ -243,6 +244,8 @@ span.bold {
   min-width: 150px;
 
   .toolbar-paper {
+    border-radius: 15px;
+
     padding: 0.5em;
     width: 100%;
 
