@@ -1,2 +1,2 @@
-npm i
+npm ci
 yarn build
