@@ -92,7 +92,7 @@ body {
       margin-top: 0;
       margin-bottom: 0;
       font-size: $primary-font-size;
-      max-width: calc(100% - 5em);
+      max-width: calc(100% - 2em);
     }
 
     .date {
@@ -283,7 +283,7 @@ span.bold {
     display: none;
   }
 
-  .item > .date {
+  .cv-page .item > .date {
     position: relative;
     right: 0;
   }
