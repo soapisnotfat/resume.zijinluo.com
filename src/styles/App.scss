@@ -1,13 +1,14 @@
 $primary-color: #eaaa00;
 $secondary-color: #003057;
 $third-color: #b3a369;
+$gray: #d3d3d3;
 
 $item-name-font-size: 1.5em;
 $item-inner-spacing: 0.3em;
-$item-horizontal-padding: 0.05em;
+$item-horizontal-padding: 0.15em;
 $intersectional-padding: 0.3em;
 
-$primary-font-size: 1em;
+$primary-font-size: 0.97em;
 $secondary-font-size: 0.8em;
 $notes-font-size: 0.7em;
 
@@ -117,6 +118,14 @@ body {
       ul li {
         margin-top: 0;
       }
+    }
+
+    &:hover {
+      background-color: rgba($gray, 0.1);
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
     }
   }
 
