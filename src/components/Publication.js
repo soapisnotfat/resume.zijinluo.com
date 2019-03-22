@@ -48,16 +48,16 @@ class PublicationItem extends Component {
 
   render() {
     return (
-      <section className="publication-item item">
-        <h3 className="publication-title name">
+      <section className='publication-item item'>
+        <h3 className='publication-title name'>
           {this.props.title} {this.getLinks()}
         </h3>
-        <div className="date">{this.props.date}</div>
-        <p className="authors">{this.getAuthors()}</p>
-        <p className="venue">{this.props.venue}</p>
+        <div className='date'>{this.props.date}</div>
+        <p className='authors'>{this.getAuthors()}</p>
+        <p className='venue'>{this.props.venue}</p>
         {this.props.notes && (
           <ReactMarkdown
-            className="experience-notes notes markdown-body"
+            className='experience-notes notes markdown-body'
             source={this.props.notes.join('\n')}
           />
         )}
@@ -82,7 +82,7 @@ class Publication extends Component {
       return (
         appState.publication.show && (
           <Fade in={true} timeout={500}>
-            <section className="publication" id="publication">
+            <section className='publication' id='publication'>
               <SectionHeader title={'Publication'} />
               {this.getListOf(
                 PublicationItem,

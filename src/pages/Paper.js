@@ -22,7 +22,7 @@ export default class Paper extends Component {
   render() {
     return (
       <main>
-        <aside className="toolbar">
+        <aside className='toolbar'>
           <ControlBar />
         </aside>
         <article

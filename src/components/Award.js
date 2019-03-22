@@ -11,12 +11,12 @@ import util from './util';
 class AwardItem extends Component {
   render() {
     return (
-      <section className=" item">
-        <h3 className="award-title name">{this.props.title}</h3>
-        <p className="award-awarded-by">{this.props.awardedBy}</p>
-        <div className="award-date date">{this.props.date}</div>
+      <section className=' item'>
+        <h3 className='award-title name'>{this.props.title}</h3>
+        <p className='award-awarded-by'>{this.props.awardedBy}</p>
+        <div className='award-date date'>{this.props.date}</div>
         <ReactMarkdown
-          className="award-notes notes markdown-body"
+          className='award-notes notes markdown-body'
           source={this.props.notes.join('\n')}
         />
       </section>
@@ -32,7 +32,7 @@ class Award extends Component {
       return (
         appState.award.show && (
           <Fade in={true} timeout={500}>
-            <section className="award" id="awards">
+            <section className='award' id='awards'>
               <SectionHeader title={'Awards'} />
               {util.getListOf(
                 AwardItem,

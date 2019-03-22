@@ -10,9 +10,9 @@ import util from './util';
 class CourseWorkItem extends Component {
   render() {
     return (
-      <section className="courseWork-item item">
+      <section className='courseWork-item item'>
         <p>
-          <span className="bold">{this.props.name}</span>:{' '}
+          <span className='bold'>{this.props.name}</span>:{' '}
           {this.props.items.join(', ')}
         </p>
       </section>
@@ -28,8 +28,8 @@ class courseWork extends Component {
       return (
         appState.coursework.show && (
           <Fade in={true} timeout={500}>
-            <section className="courseWork" id="courseWork">
-              <SectionHeader title="Course Work" />
+            <section className='courseWork' id='courseWork'>
+              <SectionHeader title='Course Work' />
               {util.getListOf(
                 CourseWorkItem,
                 toJS(appState.coursework.data),

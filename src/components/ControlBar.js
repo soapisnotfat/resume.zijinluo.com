@@ -67,11 +67,11 @@ class ControlBar extends Component {
     const classes = this.props.classes;
     return (
       <Fade in={true} timeout={500}>
-        <Paper className="toolbar-paper" elevation={0}>
-          <div className="should-feature">
+        <Paper className='toolbar-paper' elevation={0}>
+          <div className='should-feature'>
             <span>CV</span>
             <Switch
-              color="primary"
+              color='primary'
               checked={appState.featured}
               onChange={this.onSwitchCVResume}
             />
@@ -79,8 +79,8 @@ class ControlBar extends Component {
           </div>
           <Button
             className={classes.sealButtom}
-            variant="outlined"
-            color="inherit"
+            variant='outlined'
+            color='inherit'
             onClick={this.onSwitchSeal}
           >
             <SealIcon />
@@ -89,8 +89,8 @@ class ControlBar extends Component {
 
           <Button
             className={classes.pdfButton}
-            variant="contained"
-            color="primary"
+            variant='contained'
+            color='primary'
             onClick={() => {
               window.open(
                 `${
@@ -107,8 +107,8 @@ class ControlBar extends Component {
 
           <Button
             className={classes.printButton}
-            variant="contained"
-            color="primary"
+            variant='contained'
+            color='primary'
             onClick={() => {
               window.print();
             }}
@@ -118,9 +118,9 @@ class ControlBar extends Component {
 
           <Button
             className={classes.otherButton}
-            variant="text"
-            color="inherit"
-            size="small"
+            variant='text'
+            color='inherit'
+            size='small'
             onClick={() => {
               window.open('https://me.zijinluo.com');
             }}

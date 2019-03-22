@@ -10,9 +10,9 @@ import util from './util';
 class SkillItem extends Component {
   render() {
     return (
-      <section className="skill-item item">
+      <section className='skill-item item'>
         <p>
-          <span className="bold">{this.props.name}</span>:{' '}
+          <span className='bold'>{this.props.name}</span>:{' '}
           {this.props.items.join(', ')}
         </p>
       </section>
@@ -28,8 +28,8 @@ class Skill extends Component {
       return (
         appState.skill.show && (
           <Fade in={true} timeout={500}>
-            <section className="skill" id="skills">
-              <SectionHeader title="Skills" />
+            <section className='skill' id='skills'>
+              <SectionHeader title='Skills' />
               {util.getListOf(SkillItem, toJS(appState.skill.data), false)}
             </section>
           </Fade>

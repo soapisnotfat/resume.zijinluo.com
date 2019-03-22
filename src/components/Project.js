@@ -11,11 +11,11 @@ import util from './util';
 class ProjectItem extends Component {
   render() {
     return (
-      <section className="project-item item">
-        <h3 className="project-title name">{this.props.title}</h3>
-        <div className="project-date date">{this.props.date}</div>
+      <section className='project-item item'>
+        <h3 className='project-title name'>{this.props.title}</h3>
+        <div className='project-date date'>{this.props.date}</div>
         <ReactMarkdown
-          className="project-notes notes markdown-body"
+          className='project-notes notes markdown-body'
           source={this.props.notes.join('\n')}
         />
       </section>
@@ -31,7 +31,7 @@ class Project extends Component {
       return (
         appState.project.show && (
           <Fade in={true} timeout={500}>
-            <section className="project" id="project">
+            <section className='project' id='project'>
               <SectionHeader title={'Projects'} />
               {util.getListOf(
                 ProjectItem,
