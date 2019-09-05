@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Software Engineer Intern",
+    "company": "Facebook",
+    "companyLink": "https://www.facebook.com/",
+    "location": "Menlo Park, CA",
+    "skills": "React, JavaScript, PHP/Hack, Relay, GraphQL, Facebook Infra",
+    "startDate": "May. 2019",
+    "endDate": "Aug. 2019",
+    "notes": [
+      "- Joined the Content Reviewing Platform team as a full-stack engineer",
+      "- Worked indivisually on an internal tool serving more than 30k users "
+    ],
+    "featured": true,
+    "archived": false
+  },
+  {
+    "title": "Software Engineer Intern",
+    "company": "IBM Watson&Cloud Platform",
+    "companyLink": "https://www.ibm.com/",
+    "location": "Cambridge, MA",
+    "skills": "JavaScript/TypeScript, Python, Agile Development, REST API, Webpack, React, Express",
+    "startDate": "May. 2018",
+    "endDate": "Aug. 2018",
+    "notes": [
+      "- Implemented an automated git data generation tool in **CI/CD** procedure to accelerate **agile developing and publishing** of Watson Assistance services",
+      "- Built a slack chatbot in **Express** and **REST API** to organize and manage everything in **CI/CD** procedure on slack with more than 3 times faster speed",
+      "- Designed and implemented a bag-of-word classifier in **Java** to estimate the storypoints of issue based on its content for Slack chatbot"
+    ],
+    "featured": true,
+    "archived": false
+  },
+  {
+    "title": "Undergraduate Research Assistant",
+    "company": "Entertainment Intelligence Lab @ Gatech",
+    "companyLink": "http://eilab.gatech.edu/",
+    "location": "Atlanta, GA",
+    "skills": "Python, Computer Vision, PyTorch, data visualization",
+    "startDate": "Oct. 2017",
+    "endDate": "",
+    "notes": [
+      "- Researching in **Computer Vision** and **Deep Learning**",
+      "- Developed an efficient system of converting gameplay videos to logs and an extension using Transfer Learning to adapt in new domains in **Pytorch**",
+      "- Published some works on reducing necessary computing sources to train and deploy deep CNN on low-end machines to perform video data extraction"
+    ],
+    "featured": true,
+    "archived": false
+  },
+  {
+    "title": "Student Software Developer",
+    "company": "GT Bits of Good",
+    "companyLink": "https://bitsofgood.org/",
+    "location": "Atlanta, GA",
+    "skills": "Javascript, REST API, React, Express, Webpack",
+    "startDate": "Jan. 2018",
+    "endDate": "May. 2018",
+    "notes": [
+      "- Implemented a virtual monitoring platform based on **MongoDB**, **Express**, and **react** in a team of 5 students.",
+      "- Developed a responsive chat system and a customizable video streaming app integrated with the platform based on [Jitsi](https://jitsi.org)"
+    ],
+    "featured": false,
+    "archived": false
+  }
+]

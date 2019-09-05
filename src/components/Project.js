@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import appState from '../store/appState';
 import SectionHeader from './SectionHeader';
-import util from './util';
+import { getListOf } from './util';
 
 class ProjectItem extends Component {
   render() {
@@ -33,7 +33,7 @@ class Project extends Component {
           <Fade in={true} timeout={500}>
             <section className='project' id='project'>
               <SectionHeader title={'Projects'} />
-              {util.getListOf(
+              {getListOf(
                 ProjectItem,
                 toJS(appState.project.data),
                 appState.featured

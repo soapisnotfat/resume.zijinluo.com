@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Making CNNs for Video Parsing Accessible",
+    "authors": [
+      "Zijin Luo",
+      "Matthew Guzdial",
+      "Mark Riedl"
+    ],
+    "venue": "In Proceeding of FDG-2019",
+    "links": {
+      "Arxiv": "https://arxiv.org/abs/1906.11877"
+    },
+    "date": "Aug 2019",
+    "featured": true
+  },
+  {
+    "title": "Player Experience Extraction from Gameplay Video",
+    "authors": [
+      "Zijin Luo",
+      "Matthew Guzdial",
+      "Nicholas Liao",
+      "Mark Riedl"
+    ],
+    "venue": "Oral Presentation of AIIDE-2018",
+    "links": {
+      "AAAI": "https://aaai.org/ocs/index.php/AIIDE/AIIDE18/paper/view/18115",
+      "Arxiv": "https://arxiv.org/abs/1809.06201"
+    },
+    "date": "Nov 2018",
+    "featured": true
+  }
+]

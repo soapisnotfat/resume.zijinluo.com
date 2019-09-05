@@ -5,7 +5,7 @@ import { PropTypes } from 'prop-types';
 import React, { Component } from 'react';
 import appState from '../store/appState';
 import SectionHeader from './SectionHeader';
-import util from './util';
+import { getListOf } from './util';
 
 class SkillItem extends Component {
   render() {
@@ -30,7 +30,7 @@ class Skill extends Component {
           <Fade in={true} timeout={500}>
             <section className='skill' id='skills'>
               <SectionHeader title='Skills' />
-              {util.getListOf(SkillItem, toJS(appState.skill.data), false)}
+              {getListOf(SkillItem, toJS(appState.skill.data), false)}
             </section>
           </Fade>
         )

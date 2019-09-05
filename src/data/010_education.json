@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Georgia Institute of Technology",
+    "study": "Bachelor’s Degree in Computer Science",
+    "startDate": "Aug. 2016",
+    "endDate": "Dec. 2019",
+    "isCurrent": true,
+    "notes": [
+      "- Major in ***Computer Science***. Thread in *Information Network* & *Intelligence*"
+    ],
+    "featured": true,
+    "archived": false
+  },
+  {
+    "name": "Bishop Alemany High School",
+    "study": "High School Graduate",
+    "startDate": "Jan. 2014",
+    "endDate": "May. 2016",
+    "isCurrent": false,
+    "notes": ["- GPA: 4.4/4/0"],
+    "featured": false,
+    "archived": false
+  },
+  {
+    "name": "No.1 Middle School Affiliated to CCNU",
+    "study": "High School Graduate",
+    "startDate": "Sep. 2013",
+    "endDate": "Jan. 2014",
+    "isCurrent": false,
+    "notes": [],
+    "featured": false,
+    "archived": false
+  }
+]

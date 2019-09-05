@@ -10,16 +10,14 @@ import Header from '../components/Header';
 import Project from '../components/Project';
 import Publication from '../components/Publication';
 import Skills from '../components/Skill';
-import util from '../components/util';
+import { setupData } from '../components/util';
 import '../styles/App.scss';
 import '../styles/markdown-github.css';
 
 export default class Paper extends Component {
-  componentDidMount() {
-    util.dataQuery(util.query).then(data => util.setupData(data));
-  }
-
   render() {
+    setupData();
+
     return (
       <main>
         <aside className='toolbar'>

@@ -1,0 +1,78 @@
+[
+  {
+    "title": "Slack Agile Coach",
+    "notes": [
+      "- Implemented a **javascript** Slack chatbot that connects to Github, Zenhub, and Watson Assistant Service through **REST API** to perform all native github, zenhub, and publish operations via slack. (eg. create issues, assign story points and change milestone, etc.)",
+      "- Designed a caching system cooperating with the database to ensure the chatbot can execute 99% of requests in 0.3s.",
+      "- The Coach chatbot could increase efficiency on planing, monitoring, and managing the **agile development** process by 300%+. (Engineers and managers could accomplish all agile developing actions without leaving slack)"
+    ],
+    "date": "May. 2018 to Aug. 2018",
+    "featured": true,
+    "archived": false
+  },
+  {
+    "title": "Video Game Action Recognition with Transfer Learning",
+    "notes": [
+      "- Designed a system using **deep learning** and **transfer learning** for accurate and quick **video game action recognition** in multiple domains.",
+      "- The model is trained on UCF101 dataset and transferred to other games with a relatively much smaller dataset. Comparing to direct train on smaller dataset, our system has 20x faster training speed and 17% more predicting accuracy.",
+      "- For future work we intend to explore the possibility of stylistically altering these realistic datasets to particular game aesthetics."
+    ],
+    "date": "May. 2018 to Jun. 2018",
+    "featured": true,
+    "archived": false
+  },
+  {
+    "title": "Video-to-Log Generator",
+    "notes": [
+      "- Designed a system using **CNN** model to transcribe game video to log; aiming to provide a quick and precise prediction of how a player performs by onlyusing gameplay videos.",
+      "- Referenced to AlexNet, I implemented modified last layer of the model to perform well on regional feature capture and multi-class classification.",
+      "- The system is tested on Mario Bro games with 86% accuracy in only 1 training iteration."
+    ],
+    "date": "May. 2018",
+    "featured": true,
+    "archived": false
+  },
+  {
+    "title": "Picture Super Resolution",
+    "notes": [
+      "- Improved a model using efficient sub-pixel convolution layer for increasing spatial resolution within network for tasks.",
+      "- Aiming to restore details of pictures after low-quality compression fast and efficient.",
+      "- Developed on PyTorch and deployed to web app and mobile app using Caffe2. Since Pytorch and Caffe2 are going to merge together, the project might be refactored."
+    ],
+    "date": "Mar. 2018",
+    "featured": false,
+    "archived": false
+  },
+  {
+    "title": "MARTA System Database - Georgia Tech SLS program",
+    "notes": [
+      "- Designed a customized database schema and controlling system for MARTA system",
+      "- Implemented schema on the MySQL platform to efficiently perform trip taking, trip ending, managing cards, and more administrative features.",
+      "- Used Flask as front-end framework to construct an easy using UI"
+    ],
+    "date": "Dec. 2017",
+    "featured": true,
+    "archived": false
+  },
+  {
+    "title": "Automated Note Generator",
+    "notes": [
+      "- Designed an Android App to transcribe photos that students took from lectures or audio recordings of notes in Word Documents automatically to help students to study.",
+      "- Deeply modified an OCR model for picture recognition and a language processing model for audio recognition application and deployed them on the Android platform"
+    ],
+    "date": "Nov. 2017",
+    "featured": false,
+    "archived": false
+  },
+  {
+    "title": "Lost-N-Found Android App",
+    "notes": [
+      "- Designed a Lost-N-Found Android application for campus service",
+      "- Fully integrated database, animation, and Google maps into my Android application",
+      "- Developed a secure and efficient user system by using built-in Firebase"
+    ],
+    "date": "Oct. 2017",
+    "featured": false,
+    "archived": true
+  }
+]
