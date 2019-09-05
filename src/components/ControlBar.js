@@ -48,16 +48,12 @@ class ControlBar extends Component {
 
   onSwitchCVResume() {
     if (appState.featured) {
-      history.push('/cv');
+      history.push('/full');
     } else {
-      history.push('/resume');
+      history.push('/short');
     }
     appState.featured = !appState.featured;
-    if (appState.featured) {
-      document.title = 'Zijin Luo - Resume';
-    } else {
-      document.title = 'Zijin Luo - CV';
-    }
+    document.title = 'Zijin Luo - Resume';
   }
 
   onSwitchSeal() {
@@ -70,13 +66,13 @@ class ControlBar extends Component {
       <Fade in={true} timeout={500}>
         <Paper className='toolbar-paper' elevation={0}>
           <div className='should-feature'>
-            <span>CV</span>
+            <span>Full</span>
             <Switch
               color='primary'
               checked={appState.featured}
               onChange={this.onSwitchCVResume}
             />
-            <span>Resume</span>
+            <span>One-page</span>
           </div>
           <Button
             className={classes.sealButton}
@@ -126,7 +122,7 @@ class ControlBar extends Component {
               window.open('https://me.zijinluo.com');
             }}
           >
-            <ArrowBackIcon /> go to website
+            <ArrowBackIcon /> To My Website
           </Button>
         </Paper>
       </Fade>
