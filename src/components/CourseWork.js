@@ -1,11 +1,12 @@
-import Fade from '@material-ui/core/Fade';
-import { toJS } from 'mobx';
-import { observer } from 'mobx-react';
-import { PropTypes } from 'prop-types';
 import React, { Component } from 'react';
-import appState from '../store/appState';
+
+import Fade from '@material-ui/core/Fade';
+import { PropTypes } from 'prop-types';
 import SectionHeader from './SectionHeader';
-import util from './util';
+import appState from '../store/appState';
+import { getListOf } from './util';
+import { observer } from 'mobx-react';
+import { toJS } from 'mobx';
 
 class CourseWorkItem extends Component {
   render() {
@@ -22,7 +23,9 @@ class CourseWorkItem extends Component {
 
 class courseWork extends Component {
   render() {
-    if (!toJS(appState.coursework.data)) {
+    const data = toJS(appState.coursework.data);
+
+    if (!data) {
       return <div />;
     } else {
       return (
@@ -30,11 +33,7 @@ class courseWork extends Component {
           <Fade in={true} timeout={500}>
             <section className='courseWork' id='courseWork'>
               <SectionHeader title='Course Work' />
-              {util.getListOf(
-                CourseWorkItem,
-                toJS(appState.coursework.data),
-                false
-              )}
+              {getListOf(CourseWorkItem, data, false)}
             </section>
           </Fade>
         )

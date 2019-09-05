@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Programming Languages",
+    "items": [
+      "Python",
+      "JS/TS",
+      "Java",
+      "Dart",
+      "Rust",
+      "C/C++",
+      "PHP",
+      "Groovy"
+    ]
+  },
+  {
+    "name": "Web Development",
+    "items": [
+      "HTML/CSS",
+      "Node",
+      "React/Angular",
+      "Express",
+      "Webpack",
+      "WebSocket",
+      "GraphQL",
+      "Flow"
+    ]
+  },
+  {
+    "name": "Infrastructure",
+    "items": [
+      "Apache2/Nginx",
+      "Linux",
+      "Docker",
+      "Kubernetes",
+      "Amazon AWS",
+      "Google Cloud"
+    ]
+  },
+  {
+    "name": "ML & CV",
+    "items": [
+      "Image Classification",
+      "Video Action Recognition",
+      "Transfer Learning",
+      "Style Transfer",
+      "Semantic Analysis"
+    ]
+  },
+  {
+    "name": "Data Science",
+    "items": ["Python", "NumPy", "SciPy", "SQL/MySQL", "Pandas"]
+  },
+  {
+    "name": "Languages",
+    "items": ["English - bilingual", "Mandarin - native"]
+  }
+]

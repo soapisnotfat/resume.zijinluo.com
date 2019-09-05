@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Information Internetwork",
+    "items": [
+      "Computer organization",
+      "Computer System and Networks",
+      "Database System",
+      "Info Security",
+      "Info Visualization"
+    ]
+  },
+  {
+    "name": "Intelligence",
+    "items": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Robotics and Perception",
+      "Computer Vision"
+    ]
+  },
+  {
+    "name": "Other",
+    "items": [
+      "Discrete Math",
+      "Probability and Statistics",
+      "Applied Combinatorics"
+    ]
+  }
+]

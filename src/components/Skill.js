@@ -1,11 +1,12 @@
-import Fade from '@material-ui/core/Fade';
-import { toJS } from 'mobx';
-import { observer } from 'mobx-react';
-import { PropTypes } from 'prop-types';
 import React, { Component } from 'react';
-import appState from '../store/appState';
+
+import Fade from '@material-ui/core/Fade';
+import { PropTypes } from 'prop-types';
 import SectionHeader from './SectionHeader';
-import util from './util';
+import appState from '../store/appState';
+import { getListOf } from './util';
+import { observer } from 'mobx-react';
+import { toJS } from 'mobx';
 
 class SkillItem extends Component {
   render() {
@@ -30,7 +31,7 @@ class Skill extends Component {
           <Fade in={true} timeout={500}>
             <section className='skill' id='skills'>
               <SectionHeader title='Skills' />
-              {util.getListOf(SkillItem, toJS(appState.skill.data), false)}
+              {getListOf(SkillItem, toJS(appState.skill.data), false)}
             </section>
           </Fade>
         )

@@ -1,9 +1,10 @@
-import Fade from '@material-ui/core/Fade';
-import { toJS } from 'mobx';
-import { observer } from 'mobx-react';
 import React, { Component } from 'react';
-import seal from '../gt-seal.svg';
+
+import Fade from '@material-ui/core/Fade';
 import appState from '../store/appState';
+import { observer } from 'mobx-react';
+import seal from '../gt-seal.svg';
+import { toJS } from 'mobx';
 
 function DesktopOrMobile({ mobile, desktop }) {
   return [

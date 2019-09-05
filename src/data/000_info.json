@@ -1,0 +1,25 @@
+{
+  "firstName": "Zijin",
+  "lastName": "Luo",
+  "preferredName": "",
+  "location": "Atlanta, GA",
+  "position": "Full Stack · ML/CV · Mobile Dev",
+  "pastLocations": ["Los Angeles, CA", "Atlanta, GA", "Bay Area, CA"],
+
+  "phone": "818-398-7657",
+  "school_email": "zijinluo@gatech.edu",
+  "personal_email": "deovant@gmail.com",
+  "official_email": "contact@zijinluo.com",
+  "primary_email": "zijinluo@gatech.edu",
+
+  "website_url": "https://me.zijinluo.com",
+  "resume_url": "https://resume.zijinluo.com",
+  "blog_url": "https://blog.zijin.dev",
+
+  "facebook_url": "https://www.facebook.com/zijinluoo",
+  "linkedin_url": "https://www.linkedin.com/in/zijinluo",
+  "github_url": "https://github.zijinluo.com",
+
+  "resume_download_url": "https://s3.us-east-2.amazonaws.com/zijinluo.com/Zijin+Luo+-+Resume.pdf",
+  "cv_download_url": "https://s3.us-east-2.amazonaws.com/zijinluo.com/Zijin+Luo+-+CV.pdf"
+}

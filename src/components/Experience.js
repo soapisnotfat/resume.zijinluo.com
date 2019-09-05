@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import appState from '../store/appState';
 import SectionHeader from './SectionHeader';
-import util from './util';
+import { getListOf } from './util';
 
 class ExperienceItem extends Component {
   getDate() {
@@ -54,7 +54,7 @@ class Experience extends Component {
           <Fade in={true} timeout={500}>
             <section className='experience' id='experience'>
               <SectionHeader title={'Experience'} />
-              {util.getListOf(
+              {getListOf(
                 ExperienceItem,
                 toJS(appState.experience.data),
                 appState.featured

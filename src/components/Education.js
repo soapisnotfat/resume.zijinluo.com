@@ -1,12 +1,13 @@
-import Fade from '@material-ui/core/Fade';
-import { toJS } from 'mobx';
-import { observer } from 'mobx-react';
-import { PropTypes } from 'prop-types';
 import React, { Component } from 'react';
+
+import Fade from '@material-ui/core/Fade';
+import { PropTypes } from 'prop-types';
 import ReactMarkdown from 'react-markdown';
-import appState from '../store/appState';
 import SectionHeader from './SectionHeader';
-import util from './util';
+import appState from '../store/appState';
+import { getListOf } from './util';
+import { observer } from 'mobx-react';
+import { toJS } from 'mobx';
 
 class EducationItem extends Component {
   getDate() {
@@ -41,7 +42,7 @@ class Education extends Component {
           <Fade in={true} timeout={500}>
             <section className='education' id='education'>
               <SectionHeader title={'Education'} />
-              {util.getListOf(
+              {getListOf(
                 EducationItem,
                 toJS(appState.education.data),
                 appState.featured
