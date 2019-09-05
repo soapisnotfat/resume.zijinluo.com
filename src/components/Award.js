@@ -1,12 +1,13 @@
-import Fade from '@material-ui/core/Fade';
-import { toJS } from 'mobx';
-import { observer } from 'mobx-react';
-import { PropTypes } from 'prop-types';
 import React, { Component } from 'react';
+
+import Fade from '@material-ui/core/Fade';
+import { PropTypes } from 'prop-types';
 import ReactMarkdown from 'react-markdown';
-import appState from '../store/appState';
 import SectionHeader from './SectionHeader';
+import appState from '../store/appState';
 import { getListOf } from './util';
+import { observer } from 'mobx-react';
+import { toJS } from 'mobx';
 
 class AwardItem extends Component {
   render() {
@@ -26,7 +27,9 @@ class AwardItem extends Component {
 
 class Award extends Component {
   render() {
-    if (!toJS(appState.award.data)) {
+    const data = toJS(appState.award.data);
+
+    if (!data) {
       return <div />;
     } else {
       return (
@@ -34,11 +37,7 @@ class Award extends Component {
           <Fade in={true} timeout={500}>
             <section className='award' id='awards'>
               <SectionHeader title={'Awards'} />
-              {getListOf(
-                AwardItem,
-                toJS(appState.award.data),
-                appState.featured
-              )}
+              {getListOf(AwardItem, data, appState.featured)}
             </section>
           </Fade>
         )

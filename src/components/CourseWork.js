@@ -23,7 +23,9 @@ class CourseWorkItem extends Component {
 
 class courseWork extends Component {
   render() {
-    if (!toJS(appState.coursework.data)) {
+    const data = toJS(appState.coursework.data);
+
+    if (!data) {
       return <div />;
     } else {
       return (
@@ -31,7 +33,7 @@ class courseWork extends Component {
           <Fade in={true} timeout={500}>
             <section className='courseWork' id='courseWork'>
               <SectionHeader title='Course Work' />
-              {getListOf(CourseWorkItem, toJS(appState.coursework.data), false)}
+              {getListOf(CourseWorkItem, data, false)}
             </section>
           </Fade>
         )

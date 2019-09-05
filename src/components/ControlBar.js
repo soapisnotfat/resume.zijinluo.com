@@ -15,7 +15,7 @@ import { observer } from 'mobx-react';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = {
-  sealButtom: {
+  sealButton: {
     margin: 0,
     marginBottom: '5px',
     marginTop: '5px',
@@ -79,7 +79,7 @@ class ControlBar extends Component {
             <span>Resume</span>
           </div>
           <Button
-            className={classes.sealButtom}
+            className={classes.sealButton}
             variant='outlined'
             color='inherit'
             onClick={this.onSwitchSeal}
