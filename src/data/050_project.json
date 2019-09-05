@@ -29,7 +29,7 @@
       "- The system is tested on Mario Bro games with 86% accuracy in only 1 training iteration."
     ],
     "date": "May. 2018",
-    "featured": true,
+    "featured": false,
     "archived": false
   },
   {
@@ -51,7 +51,7 @@
       "- Used Flask as front-end framework to construct an easy using UI"
     ],
     "date": "Dec. 2017",
-    "featured": true,
+    "featured": false,
     "archived": false
   },
   {
