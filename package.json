@@ -6,7 +6,7 @@
     "url": "https://me.zijinluo.com"
   },
   "homepage": "https://resume.zijinluo.com",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "devDependencies": {
     "eslint-plugin-react": "^7.14.3",
     "node-sass-chokidar": "^1.3.5",
@@ -18,8 +18,8 @@
     "@material-ui/icons": "4.2.1",
     "classnames": "^2.2.6",
     "dotenv": "^8.1.0",
+    "github-markdown-css": "^3.0.1",
     "history": "^4.9.0",
-    "jsonwebtoken": "^8.5.1",
     "mobx": "^5.13.0",
     "mobx-react": "^6.1.3",
     "prop-types": "^15.7.2",

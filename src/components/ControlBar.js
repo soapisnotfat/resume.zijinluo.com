@@ -1,17 +1,18 @@
-import Switch from '@material-ui/core//Switch';
+import React, { Component } from 'react';
+import appState, { history } from '../store/appState';
+
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
 import Paper from '@material-ui/core/Paper';
-import { withStyles } from '@material-ui/core/styles';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-import SealIcon from '@material-ui/icons/Bookmark';
 import PrintIcon from '@material-ui/icons/Print';
-import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
 import Route from 'route-parser';
-import appState, { history } from '../store/appState';
+import SealIcon from '@material-ui/icons/Bookmark';
+import Switch from '@material-ui/core//Switch';
+import { observer } from 'mobx-react';
+import { withStyles } from '@material-ui/core/styles';
 
 const styles = {
   sealButtom: {

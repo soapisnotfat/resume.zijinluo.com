@@ -3,7 +3,7 @@
     "name": "Programming Languages",
     "items": [
       "Python",
-      "JavaScript/TypeScript",
+      "JS/TS",
       "Java",
       "Dart",
       "Rust",
@@ -21,7 +21,8 @@
       "Express",
       "Webpack",
       "WebSocket",
-      "GraphQL"
+      "GraphQL",
+      "Flow"
     ]
   },
   {

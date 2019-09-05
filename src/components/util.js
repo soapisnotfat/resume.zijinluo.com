@@ -1,14 +1,14 @@
+import React from 'react';
 import appState from '../store/appState';
-import infoData from '../data/000_info.json';
-import knownPeopleData from '../data/001_known.people.json';
+import awardData from '../data/040_award.json';
+import courseworkData from '../data/011_coursework.json';
 import educationData from '../data/010_education.json';
 import experienceData from '../data/020_experience.json';
-import courseworkData from '../data/011_coursework.json';
-import publicationData from '../data/030_publication.json';
-import awardData from '../data/040_award.json';
+import infoData from '../data/000_info.json';
+import knownPeopleData from '../data/001_known.people.json';
 import projectData from '../data/050_project.json';
+import publicationData from '../data/030_publication.json';
 import skillData from '../data/060_skill.json';
-import React from 'react';
 
 const setupData = () => {
   appState.info.data = infoData;

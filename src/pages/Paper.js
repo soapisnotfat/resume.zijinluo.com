@@ -1,6 +1,8 @@
-import classNames from 'classnames';
-import PropTypes from 'prop-types';
+import '../styles/App.scss';
+import 'github-markdown-css';
+
 import React, { Component } from 'react';
+
 import Award from '../components/Award';
 import ControlBar from '../components/ControlBar';
 import CourseWork from '../components/CourseWork';
@@ -8,11 +10,11 @@ import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Header from '../components/Header';
 import Project from '../components/Project';
+import PropTypes from 'prop-types';
 import Publication from '../components/Publication';
 import Skills from '../components/Skill';
+import classNames from 'classnames';
 import { setupData } from '../components/util';
-import '../styles/App.scss';
-import '../styles/markdown-github.css';
 
 export default class Paper extends Component {
   render() {

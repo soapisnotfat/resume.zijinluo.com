@@ -1,11 +1,12 @@
-import Fade from '@material-ui/core/Fade';
-import { toJS } from 'mobx';
-import { observer } from 'mobx-react';
-import { PropTypes } from 'prop-types';
 import React, { Component } from 'react';
-import appState from '../store/appState';
+
+import Fade from '@material-ui/core/Fade';
+import { PropTypes } from 'prop-types';
 import SectionHeader from './SectionHeader';
+import appState from '../store/appState';
 import { getListOf } from './util';
+import { observer } from 'mobx-react';
+import { toJS } from 'mobx';
 
 class CourseWorkItem extends Component {
   render() {
