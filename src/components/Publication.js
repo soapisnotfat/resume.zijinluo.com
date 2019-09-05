@@ -84,7 +84,7 @@ class Publication extends Component {
         appState.publication.show && (
           <Fade in={true} timeout={500}>
             <section className='publication' id='publication'>
-              <SectionHeader title={'Publication'} />
+              <SectionHeader title={'Publications'} />
               {this.getListOf(
                 PublicationItem,
                 toJS(appState.publication.data),
