@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Fade from '@material-ui/core/Fade';
-import appState from '../store/appState';
-import { observer } from 'mobx-react';
-import seal from '../gt-seal.svg';
-import { toJS } from 'mobx';
+import Fade from "@material-ui/core/Fade";
+import appState from "../store/appState";
+import { observer } from "mobx-react";
+import seal from "../gt-seal.svg";
+import { toJS } from "mobx";
 
 function DesktopOrMobile({ mobile, desktop }) {
   return [
-    <span key='desktop' className='show-desktop'>
+    <span key="desktop" className="show-desktop">
       {desktop}
     </span>,
-    <span key='mobile' className='show-mobile'>
+    <span key="mobile" className="show-mobile">
       {mobile}
-    </span>
+    </span>,
   ];
 }
 
@@ -22,7 +22,7 @@ class Header extends Component {
     const info = toJS(appState.info.data);
     return (
       `${info.firstName}` +
-      (info.preferredName ? ` "${info.preferredName}" ` : ' ') +
+      (info.preferredName ? ` "${info.preferredName}" ` : " ") +
       `${info.lastName}`
     );
   };
@@ -38,7 +38,7 @@ class Header extends Component {
     if (!info) {
       return (
         <div>
-          {appState.showSeal && <img className='logo' src={seal} alt='' />}
+          {appState.showSeal && <img className="logo" src={seal} alt="" />}
         </div>
       );
     } else {
@@ -46,39 +46,34 @@ class Header extends Component {
         <Fade in={true} timeout={500}>
           <div>
             <h1>{this.getFullName()}</h1>
-            <p className='info'>
+            <p className="info">
               {info.position}
-              <DesktopOrMobile mobile={<br />} desktop={' · '} />
+              <DesktopOrMobile mobile={<br />} desktop={" · "} />
               <a href={`mailto:${info.primary_email}`}>{info.primary_email}</a>
               {/* <DesktopOrMobile mobile={<br />} desktop={' · '} />
             {info.phone} */}
-              <DesktopOrMobile mobile={<br />} desktop={' · '} />
+              <DesktopOrMobile mobile={<br />} desktop={" · "} />
               {info.location}
               <br />
-              websites:{' '}
+              websites:{" "}
               <a
                 href={info.website_url}
-                target='_blank'
-                rel='noopener noreferrer'
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {info.website_url.split('//').pop()}
+                {info.website_url.split("//").pop()}
               </a>
-              <DesktopOrMobile mobile={<br />} desktop={' · '} />
-              github:{' '}
+              <DesktopOrMobile mobile={<br />} desktop={" · "} />
+              github:{" "}
               <a
                 href={info.github_url}
-                target='_blank'
-                rel='noopener noreferrer'
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {info.github_url.split('//').pop()}
-              </a>
-              <DesktopOrMobile mobile={<br />} desktop={' · '} />
-              blog:{' '}
-              <a href={info.blog_url} target='_blank' rel='noopener noreferrer'>
-                {info.blog_url.split('//').pop()}
+                {info.github_url.split("//").pop()}
               </a>
             </p>
-            {appState.showSeal && <img className='logo' src={seal} alt='' />}
+            {appState.showSeal && <img className="logo" src={seal} alt="" />}
           </div>
         </Fade>
       );

@@ -1,44 +1,44 @@
-import createHistory from 'history/createBrowserHistory';
-import { observable } from 'mobx';
+import { createBrowserHistory } from "history";
+import { observable } from "mobx";
 
 let appState = observable({
   featured: true,
   showSeal: false,
   info: {
-    data: null
+    data: null,
   },
   award: {
     data: null,
-    show: true
+    show: true,
   },
   coursework: {
     data: null,
-    show: true
+    show: true,
   },
   education: {
     data: null,
-    show: true
+    show: true,
   },
   experience: {
     data: null,
-    show: true
+    show: true,
   },
   skill: {
     data: null,
-    show: true
+    show: true,
   },
   project: {
     data: null,
-    show: true
+    show: true,
   },
   publication: {
     data: null,
-    show: true
+    show: true,
   },
   people: {
-    data: null
-  }
+    data: null,
+  },
 });
 
-export const history = createHistory();
+export const history = createBrowserHistory();
 export default appState;

@@ -1,14 +1,14 @@
-import React from 'react';
-import appState from '../store/appState';
-import awardData from '../data/040_award.json';
-import courseworkData from '../data/011_coursework.json';
-import educationData from '../data/010_education.json';
-import experienceData from '../data/020_experience.json';
-import infoData from '../data/000_info.json';
-import knownPeopleData from '../data/001_known.people.json';
-import projectData from '../data/050_project.json';
-import publicationData from '../data/030_publication.json';
-import skillData from '../data/060_skill.json';
+import React from "react";
+import appState from "../store/appState";
+import awardData from "../data/040_award.json";
+import courseworkData from "../data/011_coursework.json";
+import educationData from "../data/010_education.json";
+import experienceData from "../data/020_experience.json";
+import infoData from "../data/000_info.json";
+import knownPeopleData from "../data/001_known.people.json";
+import projectData from "../data/050_project.json";
+import publicationData from "../data/030_publication.json";
+import skillData from "../data/060_skill.json";
 
 const setupData = () => {
   appState.info.data = infoData;
@@ -23,8 +23,8 @@ const setupData = () => {
 };
 
 const getListOf = (component, dataArray, featured = false) => {
-  dataArray = dataArray.filter(e => !e.archived);
-  dataArray = featured ? dataArray.filter(e => e.featured) : dataArray;
+  dataArray = dataArray.filter((e) => !e.archived);
+  dataArray = featured ? dataArray.filter((e) => e.featured) : dataArray;
   return dataArray.map((e, i) =>
     React.createElement(component, { ...e, key: i })
   );
